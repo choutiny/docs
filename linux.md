@@ -9,3 +9,4 @@ linux note
 5. cd docs
 6. ls
 7.gvim 文件名打开文件
+
