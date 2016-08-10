@@ -4,6 +4,7 @@ tmux
 配置
 ------------
 /etc/tmux/tmux.conf
+配置文件地址: www.github.com/rs/home/git/dotfiles/dotfiles/tmux/tmux.conf
 
 操作
 ------------
@@ -16,3 +17,4 @@ ctrl+a  pgDn 当前窗口下翻历史输出记录
 ctrl+a  c   创建一个新窗口
 ctrl+a  -   上下分割当前窗口, 一分为二
 ctrl+a  |   左右分割当前窗口, 一分为二
+ctrl+a  X   强制关闭某个面板
