@@ -29,6 +29,11 @@ B.界面缩放快捷键
  
 4.启动应用程序快捷键:添加 -> 输入linux命令 -> 输入快捷键; 例: win键+c 启动google-chorme
 
-5.
+5.pwd  查看当前目录
+6.root的家目录是 /root ,其他用户的家目录为home+用户名: /home/clare  |  /home/tommy
+7.ps aux | grep 关键词 查询XXX的进程    ps aux | grep mysql 查询mysql的进程(检查是否启动)
+8.scp 准备传送文件的绝对路径+文件名 root@192.168.0.1:传过去的绝对地址+新的名字
+  scp -r 准备传送文件夹的绝对路径+文件夹名 root@192.168.0.1:传过去的绝对地址
+  
 ```
 
