@@ -102,8 +102,27 @@ B.界面缩放快捷键
 7.ps aux | grep 关键词 查询XXX的进程    ps aux | grep mysql 查询mysql的进程(检查是否启动)
 8.scp 准备传送文件的绝对路径+文件名 root@192.168.0.1:传过去的绝对地址+新的名字
   scp -r 准备传送文件夹的绝对路径+文件夹名 root@192.168.0.1:传过去的绝对地址
+  在本地, 把文件[夹]传送到远程服务器
+        scp [-P port_num] [-r] ./relative_path/ remote_account@remote_ip:remote_path
+        e.g:
+           scp ./1.txt root@192.168.100.200:/tmp 
+           scp -r /etc/php/ root@192.168.100.200:/tmp
+           scp -P27329 ./1.txt root@192.168.100.200:/tmp  
+  在本地, 把远程服务器的文件[夹]传送到本地
+        scp  [-P port_num] [-r] remote_account@remote_ip:remote_path locate_path[file]
+        e.g:
+           scp root@192.168.100.200:/home/www/index.php /var/www 
+           scp -r root@192.168.100.200:/home/www/ /var/www 
+           scp -P22 -r root@192.168.100.200:/home/www/ /var/www
 
-9. 家中服务器地址:106.187.52.223 
-  
+9. 家中服务器地址:xxx.187.52.223 
+10.自动校对时间:  ntpdate
+        
+         安装:apt-get install ntp ntpdate
+        
+11.watch 的使用方式:
+        watch -d -n3 'date +%F\ %H:%M:%S'
+        延伸用法: 每隔数秒检查一次进程 ->   watch -d -n3 'ps aux | grep php'
+
 ```
 
